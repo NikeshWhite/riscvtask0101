@@ -24,13 +24,13 @@ li t1, 0
 li s1, 0 
 
 loop: 
-bgeu t1, a2, loop_exit # if( a2 >= a3 ) goto loop_exit 
+bgeu t1, a2, loop_exit
 addi t1, t1, 1
 lw a4, 0(a5) #curr_num
 addi a5, a5, 4
 
 loop_2: 
-bgeu t2, a2, loop_2_exit # if( a2 >= a3 ) goto loop_exit 
+bgeu t2, a2, loop_2_exit
 addi t2, t2, 1
 lw a6, 0(a3)
 addi a3, a3, 4
